@@ -1,0 +1,5 @@
+---
+applications:
+  - name: es-test
+    services:
+    - opensearch-cat-test
