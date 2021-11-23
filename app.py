@@ -6,7 +6,7 @@ from datetime import datetime
 
 
 VCAP_SERVICES = json.loads(os.getenv("VCAP_SERVICES"))
-es_host = VCAP_SERVICES["opensearch"][0]["URI"]
+es_host = VCAP_SERVICES["opensearch"][0]["credentials"]["uri"]
 print('Elastic host is {}'.format(es_host))
 
 # by default we don't sniff, ever
