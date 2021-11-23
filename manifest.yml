@@ -1,5 +1,7 @@
 ---
 applications:
   - name: es-test
+    buildpacks:
+      - python_buildpack
     services:
     - opensearch-cat-test
